@@ -8,9 +8,9 @@ import time
 from urllib.parse import quote
 
 ctr: int = 1
-weather_file_path: str = 'F:\\ITG\\Python\\Weather\\weather_data.txt'
-city_file_path: str ="F:\\ITG\\Python\\Weather\\city_data.txt"
-error_log: str = "F:\\ITG\\Python\\Weather\\error.log"
+weather_file_path: str = 'weather_data.txt'
+city_file_path: str ="city_data.txt"
+error_log: str = "error.log"
 
 def _fetch_weather(city: str) -> dict[str, Any] | None:
     global ctr
