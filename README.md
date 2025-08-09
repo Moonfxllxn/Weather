@@ -7,5 +7,8 @@ To execute it, simply run the .exe file located in dist/Weather.exe. It should a
 Any other format will fail.
 
 # IMPORTANT
-- You will need your own API key and set it in your environment variables.
+- You will need your own API key (https://openweathermap.org/api) and set it in your environment variables.
 - I did not test to see if this works on linux. I suggest utilizing this only on windows for now. 
+
+If errors occure, message me on Discord with your error.log:
+<https://discord.com/users/752592909848674395>
