@@ -1,0 +1,7 @@
+build
+.vscode
+error.log
+weather_data.txt
+city_data.txt
+city_name.txt
+weather.spec
