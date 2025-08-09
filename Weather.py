@@ -6,6 +6,7 @@ import requests, re
 from typing import Any
 import time
 from urllib.parse import quote
+import sys
 
 ctr: int = 1
 weather_file_path: str = 'weather_data.txt'
@@ -92,13 +93,14 @@ def main():
     update_interval: int = 300
     pattern = re.compile(r'^\s*([A-Za-z\s]+)\s*, \s*([A-Za-z]{2})\s*$')
 
-    city: str = input('City and Country in "City, Countrycode" format: ').strip()
+    city: str = input('City and Country in "City, Countrycode" format or exit to quit: ').strip()
     validate = pattern.match(city)
     if not validate:
         warning("Invalid format. Format: 'City, Countrycode' e.g. 'London, GB'.")
         main()
-
     else:
+        if city.lower() =="exit":
+            sys.exit(0)
         city_name, cc = validate.groups()
         encoded_city: str = quote(f"{city_name.strip()},{cc.upper()}")
 
