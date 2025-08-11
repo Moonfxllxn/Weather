@@ -114,7 +114,7 @@ def save_weather_data(weather_data: dict[str, Any]) -> None:
 ---------------------------------------------------------------------------------
 Do whatever you want with this pain of a code block. It was meant to create a subthread in which a one time console
 should be created to dynamically get the city input. Obviously failed at that.
-Console logic is not implemented yet.
+Console logic is not implemented yet. As of right now, it'll only make a subthread which then takes the city input.
 
 Leave this commented out if no dynamic input is wanted. Instead change the city variable in main()
 
