@@ -1,4 +1,4 @@
-# Weather Script
+# Weather Script Ver. 1.0.1
 
 Based on python, this script fetches the weather data of a given City and writes it to a file for later usage. 
 This script will fetch new data every 5 Minutes. If it fails to fetch due to a connection error, it won't change the files.
